@@ -7,6 +7,7 @@ const tabIcons = {
   transactions: "swap-horizontal-outline",
   budgets: "pie-chart-outline",
   settings: "settings-outline",
+  exchange: "cash-outline",
 } as const;
 
 export default function TabLayout() {
@@ -65,6 +66,16 @@ export default function TabLayout() {
           title: "Settings",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name={tabIcons.settings} color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="exchange"
+        options={{
+          title: "Exchange",
+          tabBarLabel: "Exchange",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name={tabIcons.exchange} color={color} size={size} />
           ),
         }}
       />

@@ -11,6 +11,7 @@ import {
     Text,
     TextInput,
     View,
+    type RefreshControlProps,
     type StyleProp,
     type TextStyle,
     type ViewStyle,
@@ -19,9 +20,11 @@ import {
 export function Screen({
   children,
   scroll = true,
+  refreshControl,
 }: {
   children: React.ReactNode;
   scroll?: boolean;
+  refreshControl?: React.ReactElement<RefreshControlProps>;
 }) {
   const colors = usePalette();
   return scroll ? (
@@ -29,6 +32,7 @@ export function Screen({
       style={{ backgroundColor: colors.background }}
       contentContainerStyle={styles.screen}
       keyboardShouldPersistTaps="handled"
+      refreshControl={refreshControl}
     >
       {children}
     </ScrollView>

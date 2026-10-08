@@ -42,6 +42,10 @@ export default function RootLayout() {
         >
           <Stack.Screen name="(tabs)" />
           <Stack.Screen
+            name="insights"
+            options={{ headerShown: true, title: "Money insights" }}
+          />
+          <Stack.Screen
             name="transaction"
             options={{
               presentation: "modal",
