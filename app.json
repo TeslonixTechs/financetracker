@@ -40,6 +40,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b61c3fa6-e148-44b7-a71b-cf24f200d6e7"
+      }
+    },
+    "owner": "teslonix"
   }
 }
